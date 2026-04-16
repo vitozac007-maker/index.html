@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Surat Undangan Conexia</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    #btn {
+      font-size: 24px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #gambar {
+      display: none;
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="btn" onclick="tampilkanGambar()">click here</button>
+
+<img id="gambar" src="gambar.jpg" alt="prank">
+
+<script>
+  function tampilkanGambar() {
+    document.getElementById("gambar").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
